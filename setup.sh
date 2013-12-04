@@ -9,4 +9,5 @@ echo "deb-src http://us.archive.ubuntu.com/ubuntu/ precise-updates universe" >> 
 apt-get update && apt-get install -y ca-certificates sudo curl git-core
 dpkg-divert --local --rename --add /sbin/initctl && ln -s /bin/true /sbin/initctl
 
-locale-gen  en_US.UTF-8
+locale-gen en_US.UTF-8
+update-locale en_US.UTF-8
